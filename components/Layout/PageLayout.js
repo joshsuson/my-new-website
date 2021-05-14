@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Sidebar } from ".";
+import { Sidebar, TopNavBar } from ".";
 
 const PageWrapper = styled.div`
   background-color: var(--background);
@@ -15,7 +15,11 @@ export const PageLayout = ({ children }) => {
   return (
     <PageWrapper>
       <Sidebar />
-      <MainWrapper>{children}</MainWrapper>
+
+      <MainWrapper>
+        <TopNavBar />
+        {children}
+      </MainWrapper>
     </PageWrapper>
   );
 };

@@ -21,6 +21,8 @@ const GlobalStyles = createGlobalStyle`
         --apple-red: #ff5f57;
         --apple-green: #28c840;
         --apple-yellow: #febc2e;
+        --scrollbar: hsla(208, 2%, 36%, .75);
+        --page-icon: #efd81d;
         box-sizing: border-box;
         font-size: 10px;
     }
@@ -35,7 +37,19 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         font-size: 1.5rem;
         line-height: 2;
-        background-color: var(--background)
+        background-color: var(--background);
+    }
+
+    *::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: var(--title-bar);
+        border-radius: 0 5px 0 0;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--scrollbar);
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -48,10 +62,7 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         color: inherit;
     }
-`;
-
-const Wrapper = styled.div`
-  background-color: var(--background);
+    
 `;
 
 export default function Page({ children }) {

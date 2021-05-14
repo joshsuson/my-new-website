@@ -3,25 +3,26 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import { IoMdDocument } from "react-icons/io";
+import { navItems } from "../../lib/navItems";
 
-const navItems = [
-  {
-    name: "index.js",
-    slug: "/",
-  },
-  {
-    name: "about.js",
-    slug: "/about",
-  },
-  {
-    name: "work.js",
-    slug: "/work",
-  },
-  {
-    name: "blog.js",
-    slug: "/blog",
-  },
-];
+// const navItems = [
+//   {
+//     name: "index.js",
+//     slug: "/",
+//   },
+//   {
+//     name: "about.js",
+//     slug: "/about",
+//   },
+//   {
+//     name: "work.js",
+//     slug: "/work",
+//   },
+//   {
+//     name: "blog.js",
+//     slug: "/blog",
+//   },
+// ];
 
 const CustomLink = styled.a`
   color: var(--primary-text);
@@ -45,8 +46,8 @@ const NavWrapper = styled.div`
   margin-left: 24px;
 `;
 
-const PageIcon = styled(IoMdDocument)`
-  color: var(--secondary-text);
+export const PageIcon = styled(IoMdDocument)`
+  color: var(--page-icon);
   margin-right: 4px;
 `;
 

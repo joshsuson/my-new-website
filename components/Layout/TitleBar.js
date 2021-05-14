@@ -5,7 +5,7 @@ const TitleBarWrapper = styled.div`
   width: auto;
   background-color: var(--title-bar);
   padding: 0 0.75rem;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
