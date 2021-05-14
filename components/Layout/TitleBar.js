@@ -16,13 +16,13 @@ const TitleBarWrapper = styled.div`
 
 const CircleWrapper = styled.div`
   display: flex;
-  gap: 8px;
   margin-right: auto;
 `;
 
 const NavCircle = styled.div`
   height: 12px;
   width: 12px;
+  margin-right: 8px;
   background-color: ${(props) => props.circleColor};
   border-radius: 100%;
 `;
