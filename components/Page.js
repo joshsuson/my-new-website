@@ -70,10 +70,7 @@ export default function Page({ children }) {
     <div>
       <GlobalStyles />
       <TitleBar />
-      <PageLayout>
-        <h1>This is the header</h1>
-        {children}
-      </PageLayout>
+      <PageLayout>{children}</PageLayout>
     </div>
   );
 }
